@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('com/mycompany/images/fondo.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.Controllers.ModoDeJuegosController">
+
+   <center>
+      <VBox alignment="CENTER" spacing="20" BorderPane.alignment="CENTER">
+         <!-- Título -->
+         <Label text="Modos de juego">
+            <font>
+               <Font name="Arial Bold Italic" size="36.0" />
+            </font>
+            <VBox.margin>
+               <Insets bottom="20.0" />
+            </VBox.margin>
+         </Label>
+
+         <!-- Imagen y texto -->
+         <VBox alignment="CENTER" spacing="10">
+            <ImageView fx:id="tradicional" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#elegidoT" onMouseEntered="#agrandarImg" onMouseExited="#restaurarImg" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/tradicional1.png" />
+               </image>
+            </ImageView>
+            <Label text="Tradicional">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+         </VBox>
+      </VBox>
+   </center>
+   <bottom>
+      <StackPane alignment="TOP_LEFT" prefHeight="37.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="returnB" fitHeight="41.0" fitWidth="48.0" onMouseClicked="#returnS" onMouseEntered="#handCambiarReturnB" pickOnBounds="true" preserveRatio="true" translateX="50.0" translateY="-20.0">
+               <image>
+                  <Image url="@../images/return.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets bottom="10.0" />
+               </StackPane.margin>
+            </ImageView>
+         </children>
+      </StackPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('com/mycompany/images/fondo.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.Controllers.ModoDeCompetenciaController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefHeight="127.0" prefWidth="600.0">
+               <children>
+                  <BorderPane>
+                     <center>
+                        <ImageView fx:id="modes" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#elegido" onMouseEntered="#agrandarImg" onMouseExited="#restaurarImg" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../images/j_vs_j.png" />
+                           </image>
+                        </ImageView>
+                     </center>
+                     <left>
+                        <ImageView fx:id="leftarrow" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#cambiarImgL" onMouseEntered="#handCambiarImgL" pickOnBounds="true" preserveRatio="true" scaleX="0.5" scaleY="0.5" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../images/flecha.png" />
+                           </image>
+                           <BorderPane.margin>
+                              <Insets left="80.0" />
+                           </BorderPane.margin>
+                        </ImageView>
+                     </left>
+                     <right>
+                        <ImageView fx:id="rightarrow" fitHeight="150.0" fitWidth="200.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#cambiarImgR" onMouseEntered="#handCambiarImgR" pickOnBounds="true" preserveRatio="true" scaleX="0.5" scaleY="0.5" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../images/flecha.png" />
+                           </image>
+                           <BorderPane.margin>
+                              <Insets right="80.0" />
+                           </BorderPane.margin>
+                        </ImageView>
+                     </right>
+                  </BorderPane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="59.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="labelmodes" alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="164.0" text="J vs J">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <CheckBox fx:id="fichas" mnemonicParsing="false" text="¿Elegir fichas?">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <StackPane prefHeight="37.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="returnB" fitHeight="41.0" fitWidth="48.0" onMouseClicked="#returnS" onMouseEntered="#handCambiarReturnB" pickOnBounds="true" preserveRatio="true" translateX="50.0" translateY="-20.0" StackPane.alignment="TOP_LEFT">
+               <image>
+                  <Image url="@../images/return.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets bottom="10.0" />
+               </StackPane.margin>
+            </ImageView>
+         </children>
+      </StackPane>
+   </bottom>
+   <top>
+      <StackPane prefHeight="104.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label contentDisplay="CENTER" text="Modo de Competencia">
+               <font>
+                  <Font name="Arial Bold Italic" size="36.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="10.0" />
+               </StackPane.margin>
+            </Label>
+         </children>
+      </StackPane>
+   </top>
+</BorderPane>

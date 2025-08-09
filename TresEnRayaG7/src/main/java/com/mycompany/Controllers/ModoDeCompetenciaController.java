@@ -131,7 +131,7 @@ public class ModoDeCompetenciaController implements Initializable {
                 }
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/tresenrayag7/TipoFichas.fxml"));
                 Parent fichasParent = loader.load();
-                Scene fichasScene = new Scene(fichasParent,680,480);
+                Scene fichasScene = new Scene(fichasParent,730,480);
                 TipoFichasController tipoFichasController = loader.getController();
                 tipoFichasController.inicializar(j1, j2,r);
                 Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -143,7 +143,7 @@ public class ModoDeCompetenciaController implements Initializable {
                 boolean cpu2= true;
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/tresenrayag7/SeleccionarSimbolo.fxml"));
                 Parent fichasParent = loader.load();
-                Scene fichasScene = new Scene(fichasParent,680,480);
+                Scene fichasScene = new Scene(fichasParent,730,480);
                 SeleccionarSimboloController seleccionarController = loader.getController();
                 seleccionarController.inicializar(r, cpu1, cpu2);
                 Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
