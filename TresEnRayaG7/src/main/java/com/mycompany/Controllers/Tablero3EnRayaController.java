@@ -1208,7 +1208,7 @@ public class Tablero3EnRayaController implements Initializable {
     @FXML
     public void terminarJuego(MouseEvent event) throws IOException {
         Util.mostrarMensaje("Ha terminado el juego", "Juego terminado");
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/tresenrayag7/ModosDeJuegos.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/tresenrayag7/ModoDeJuegos.fxml"));
         Parent Modos_de_juegoParent = loader.load();
         Scene Modos_de_juegoScene = new Scene(Modos_de_juegoParent,730,480);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
