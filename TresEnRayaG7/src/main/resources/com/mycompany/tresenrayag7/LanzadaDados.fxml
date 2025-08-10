@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('com/mycompany/images/fondo_simbolos.png'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.Controllers.LanzadaDadosController">
+   <top>
+      <StackPane fx:id="player" prefHeight="74.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="mensaje" text="Jugador 1 lance el dado" textFill="#d4aaad">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="30.0" />
+               </StackPane.margin>
+            </Label>
+         </children></StackPane>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefHeight="214.0" prefWidth="600.0">
+               <children>
+                  <ImageView fx:id="dado" fitHeight="172.0" fitWidth="151.0" onMouseClicked="#lanzar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dados1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </StackPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
