@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.Modelos;
 
 import java.util.HashMap;
@@ -20,19 +16,19 @@ public class Dado {
     private ResultadoDado resul;
     public Dado(){
         this.numeros= new HashMap<>();
-        this.mov="ec/edu/espol/images/dadomov.gif";
+        this.mov="com/mycompany/images/dadomov.gif";
         this.lanzado=false;
         this.resul=null;
         inicializarNumeros();
     }
     private void inicializarNumeros() {
         // Asignar los números a cada lado del dado
-        numeros.put(1, "ec/edu/espol/images/dados1.png");
-        numeros.put(2, "ec/edu/espol/images/dados2.png");
-        numeros.put(3, "ec/edu/espol/images/dados3.png");
-        numeros.put(4, "ec/edu/espol/images/dados4.png");
-        numeros.put(5, "ec/edu/espol/images/dados5.png");
-        numeros.put(6, "ec/edu/espol/images/dados6.png");
+        numeros.put(1, "com/mycompany/images/dados1.png");
+        numeros.put(2, "com/mycompany/images/dados2.png");
+        numeros.put(3, "com/mycompany/images/dados3.png");
+        numeros.put(4, "com/mycompany/images/dados4.png");
+        numeros.put(5, "com/mycompany/images/dados5.png");
+        numeros.put(6, "com/mycompany/images/dados6.png");
     }
     public ResultadoDado lanzar() {
         // Obtener un número aleatorio entre 1 y 6
@@ -55,6 +51,7 @@ public class Dado {
             return false;
         }
     }
+    
     public String getMov() {
         return mov;
     }

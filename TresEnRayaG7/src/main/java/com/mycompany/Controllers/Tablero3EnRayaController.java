@@ -1,7 +1,16 @@
 
 package com.mycompany.Controllers;
 
+import com.mycompany.Modelos.GamePhase;
+import static com.mycompany.Modelos.GamePhase.STANDBY;
+import com.mycompany.Modelos.Jugada;
 import com.mycompany.Modelos.Jugador;
+import com.mycompany.Modelos.Resultado;
+import com.mycompany.Modelos.Simbolo;
+import com.mycompany.Modelos.TipoResul;
+import com.mycompany.Modelos.Util;
+import com.mycompany.TDAs.Tree;
+import com.mycompany.TDAs.TreeNode;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;

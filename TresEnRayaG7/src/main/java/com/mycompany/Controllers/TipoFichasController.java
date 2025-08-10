@@ -1,6 +1,7 @@
 package com.mycompany.Controllers;
 
 import com.mycompany.Modelos.Jugador;
+import com.mycompany.Modelos.Resultado;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;

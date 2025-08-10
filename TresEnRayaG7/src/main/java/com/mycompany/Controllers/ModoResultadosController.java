@@ -1,5 +1,8 @@
 package com.mycompany.Controllers;
 
+import com.mycompany.Modelos.Resultado;
+import com.mycompany.Modelos.TipoResul;
+import com.mycompany.TDAs.CircularLinkedList;
 import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;

@@ -2,6 +2,9 @@ package com.mycompany.Controllers;
 
 import com.mycompany.Modelos.Dado;
 import com.mycompany.Modelos.Jugador;
+import com.mycompany.Modelos.Resultado;
+import com.mycompany.Modelos.ResultadoDado;
+import com.mycompany.Modelos.Util;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;

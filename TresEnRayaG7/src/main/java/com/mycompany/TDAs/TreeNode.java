@@ -1,5 +1,6 @@
 package com.mycompany.TDAs;
 
+import com.mycompany.Modelos.Jugada;
 import java.util.LinkedList;
 
 /**

@@ -30,11 +30,11 @@ public class MenuPrincipalController implements Initializable {
     
     @FXML
     public void jugar(MouseEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/tresenrayag7/ModoDejuego.fxml"));
-        Parent Modos_de_juegoParent = loader.load();
-        Scene Modos_de_juegoScene = new Scene(Modos_de_juegoParent,730,480);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/tresenrayag7/ModoDejuegos.fxml"));
+        Parent ModoDeJuegoParent = loader.load();
+        Scene ModoDeJuegoScene = new Scene(ModoDeJuegoParent,730,480);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        window.setScene(Modos_de_juegoScene);
+        window.setScene(ModoDeJuegoScene);
         window.show();
     }
 

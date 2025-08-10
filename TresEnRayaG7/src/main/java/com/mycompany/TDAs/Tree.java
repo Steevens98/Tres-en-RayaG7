@@ -1,5 +1,7 @@
 package com.mycompany.TDAs;
 
+import com.mycompany.Modelos.Jugada;
+
 /**
  *
  * @author Usuario
